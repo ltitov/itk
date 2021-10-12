@@ -1,0 +1,75 @@
+<form style="display: flex; width: 300px; margin: 0 auto;">
+	<div>
+		Email:
+		<input type="email" id="email" style="width: 100%;" required>
+	</div>
+	<div>
+		Password:
+		<input type="password" id="password" style="width: 100%; margin-bottom: 10px;" required>
+	</div>
+	<div>
+		<div style="float: left;">
+			<input type="checkbox" name="remember" id="remember">
+			<label for="remember">remember me</label>
+		</div>
+		<input id="login" type="submit" value="Log in" style="float: right;">
+	</div>
+</form>
+
+<script>
+	// не забудьте установить для кнопки в html-е значение атрибута id='login'
+	var loginButton = document.getElementById('login');
+	loginButton.onclick = function () {
+		// вот здесь ваш код.
+		var emailEl = document.getElementById('email').value;
+		var passwordEl = document.getElementById('password').value;
+		var rememberEl = document.getElementById('remember').checked;
+
+		if (rememberEl == true) {
+			alert('Email: ' + emailEl + '; ' + '\nPassword: ' + passwordEl + '; ' + '\nRemember me: ' + rememberEl);
+		} else {
+			alert('Remember me: ' + rememberEl + ';' + ' \nPlease check "Remember me"');
+		}
+	};
+</script>
+
+
+
+
+<!-- <input id='first-name' value='Dmitry' class='first-name-input' />
+<input id='last-name' value='Riabchik' class='last-name-input' />
+<input id='address' value='Brest' class='address-input' /> -->
+<!-- <select name="cities" id="city">
+	<option value="Moscow">Moscow</option>
+	<option value="Minsk" selected>Minsk</option>
+	<option value="Kiev">Kiev</option>
+</select> -->
+
+<!-- <textarea name="" id="text" cols="30"
+	rows="10">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Своего диких раз проектах текста силуэт власти домах переписали все?</textarea> -->
+
+<!-- <div id="img"><img id="randomImg" src="https://picsum.photos/200" alt="Random img"></div> -->
+
+<!-- <script> -->
+<!-- // var firstNameEl = document.getElementById('first-name');
+	// console.log(firstNameEl.value);
+	// // console.log(firstNameEl.className);
+	// var lastNameEl = document.getElementById('last-name');
+	// console.log(lastNameEl.value);
+	// // console.log(lastNameEl.className);
+	// var addressEl = document.getElementById('address');
+	// console.log(addressEl.value);
+	// // console.log(addressEl.className);
+	// var citiesEl = document.getElementById('city');
+	// console.log(citiesEl.value);
+	// var textEl = document.getElementById('text');
+	// console.log(textEl.value);
+	// console.log(textEl.innerHTML);
+	// var imgEl = document.getElementById('img');
+	// console.log(imgEl.value);
+	// console.log(imgEl.innerHTML);
+	// console.log(citiesEl.innerHTML);
+	// var randomElem = document.getElementById('randomImg');
+	// console.log(randomElem.alt); -->
+
+<!-- </script> -->

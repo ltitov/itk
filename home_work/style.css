@@ -1,0 +1,31 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+#wrapper {
+  margin: 0 auto;
+  width: 500px;
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+  transition: all 1s ease-in-out;
+}
+
+.error {
+  border: 1px solid red;
+}
+
+.hide {
+  display: none;
+}
+
+
+#wrapper.normal {
+  width: 500px;
+}
+
+#wrapper.zero {
+  width: 0;
+}

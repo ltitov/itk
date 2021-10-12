@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>09</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrapper" id="wrapper">
+        <div class="left-box">
+            <div id='avatar-wrapper'>
+                <img id='avatar' src='https://pp.userapi.com/c631924/v631924026/44d7/AiFmeYaLmTc.jpg' alt='аватар' />
+            </div>
+            <div id="rg1" class="rg1">
+                Sex
+                <div>
+                    <input type="radio" id="male" name="sex" value="Male" checked>
+                    <label for="male">M</label>
+                </div>
+                <div>
+                    <input type="radio" id="famale" name="sex" value="Famale" class="famale">
+                    <label for="famale">F</label>
+                </div>
+            </div>
+            <div id="check">
+                Single
+                <input type="checkbox" name="confirm" id="input-checkbox">
+            </div>
+
+        </div>
+        <div class="right-box">
+
+
+            <div id="first-name-wrap">
+                <label for="first-name">First Name</label>
+                <input class="first-name" type="text" id="first-name" value="Artur">
+            </div>
+            <div id="last-name-wrap">
+                <label for="last-name">Last Name</label>
+                <input class="last-name" type="text" id="last-name" value="Tsitov">
+            </div>
+            <div>
+                <h3 style="font-weight: 400;">City:</h3>
+                <select id='cities' class="select-class">
+                    <option>Kiev</option>
+                    <option selected>Minsk</optionselected>
+                    <option>Moscow</option>
+                </select>
+            </div>
+            <div id="about">
+                About me
+            </div>
+            <textarea id='about-me'>I am good man. I want find a job.
+        </textarea>
+        </div>
+
+    </div>
+    <button id="button" style="margin: 0 auto; display: block;">Press</button>
+
+
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>

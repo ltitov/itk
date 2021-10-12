@@ -1,0 +1,46 @@
+#wrapper {
+  margin: 0 auto;
+  max-width: 500px;
+  display: flex;
+}
+
+#first-name-wrap,
+#last-name-wrap {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  max-width: 200px;
+}
+
+#rg1 {
+  display: flex;
+  margin-bottom: 10px;
+  max-width: 200px;
+}
+
+#rg1 div {
+  display: flex;
+  flex-direction: row;
+}
+
+#check {
+  margin-bottom: 20px;
+}
+
+#avatar-wrapper {
+  margin-bottom: 20px;
+}
+
+#cities {
+  margin-bottom: 20px;
+}
+
+#about-me {
+  width: 200px;
+  height: 50px;
+}
+
+.left-box {
+  margin-right: 50px;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .wrapper {
+        width: 300px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #000;
+    }
+
+    .email,
+    .password {
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+    }
+
+    .bottom-block {
+        margin-top: 10px;
+    }
+
+    #button {
+        float: right;
+    }
+</style>
+
+<body>
+    <div class="wrapper">
+        <div class="email">email
+            <input id='first-name' value='Artur' class='first-name-input' type="text" />
+        </div>
+        <div class="password">Password
+            <input id='password-input' value='Secret_password' class='password-input' type="password" />
+        </div>
+        <div class="bottom-block">
+            <input type="checkbox" id="checkbox">
+            <label for="checkbox">Remember me</label>
+            <input type="submit" value="Log in" id="button">
+        </div>
+    </div>
+
+    <script>
+        let firstNameEl = document.getElementById('first-name');
+        let passwordEl = document.getElementById('password-input');
+        let checkboxEl = document.getElementById('checkbox');
+
+        var loginButton = document.getElementById('button');
+        loginButton.onclick = function () {
+
+            console.log(firstNameEl.value, ';', passwordEl.value, ';', checkboxEl.checked);
+        };
+
+    </script>
+
+</body>
+
+</html>

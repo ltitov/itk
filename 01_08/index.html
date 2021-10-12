@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+</style>
+
+<body>
+    <div class="box">
+        <input id='first-name' value='Dmitry' class='first-name-input' />
+        <input id='last-name' value='Titov' class='last-name-input' />
+        <input id='address' value='Brest' class='address-input' />
+        <select name="" id="select-option">
+            <option value="msk">moscow</option>
+            <option value="m" selected>minsk</option>
+            <option value="kiev">kiev</option>
+        </select>
+        <textarea id="textarea-input">js, css, html, gulp</textarea>
+        <div id="wrapper-img"><img id="image" src="https://picsum.photos/200" alt="Здесь пусто"></div>
+    </div>
+    <script>
+        let firstNameEl = document.getElementById('first-name');
+        let lastNameEl = document.getElementById('last-name');
+        let adressEl = document.getElementById('address');
+        let selectEl = document.getElementById('select-option');
+        let textareaEl = document.getElementById('textarea-input');
+        let wrapperImgEl = document.getElementById('wrapper-img');
+        let imgEl = document.getElementById('image');
+
+        console.log(firstNameEl.value);
+        console.log(firstNameEl.className);
+        console.log(lastNameEl.value);
+        console.log(adressEl.value);
+        console.log(selectEl.value);
+        console.log(selectEl.innerHTML);
+        console.log(textareaEl.value);
+        console.log(textareaEl.innerHTML);
+        console.log(wrapperImgEl.innerHTML);
+        console.log(imgEl.src, imgEl.alt);
+
+
+
+
+
+
+        // let i = 0;
+        // while (i < selectEl.length) {
+        //     console.log(selectEl[i].value);
+        //     i++;
+        // }
+
+        // for (i = 0; i < selectEl.length; i++) {
+        //     console.log(selectEl[i].value);
+        // }
+
+
+
+    </script>
+</body>
+
+</html>
